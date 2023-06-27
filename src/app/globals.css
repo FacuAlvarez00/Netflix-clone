@@ -1,6 +1,17 @@
 
-
-
 body {
   background-color: #141414;
+}
+
+/* HERO */
+
+.movie_container {
+  position: relative;
+}
+
+.movie_info {
+  position: absolute;
+  top: 30rem;
+  left: 0;
+  z-index: 1;
 }
