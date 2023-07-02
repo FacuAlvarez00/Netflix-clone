@@ -4,6 +4,7 @@ import { requests } from "../app/utils/requests"
 import { useEffect, useState } from 'react'
 import Carrousel from './components/Carrousel'
 import Hero from './components/Hero'
+import Navbar from './components/Navbar'
 
 export default function Home() {
   const [headerMovie, setHeaderMovie] = useState<any>([])
@@ -23,26 +24,17 @@ export default function Home() {
 
   return (
     <main className="">
-
+      <Navbar/>
       <Hero APIdata={headerMovie?.data?.results}/>
 
       <section style={{paddingLeft: "60px", paddingRight: "60px",}} className='trending'>
-        <Carrousel APIdata={trendingMovies?.data?.results}/>
+        <Carrousel APIdata={trendingMovies?.data?.results} carrouselTitle={"Trending"}/>
+      </section>
+      
+      <section style={{paddingLeft: "60px", paddingRight: "60px",}} className='trending'>
+        <Carrousel APIdata={trendingMovies?.data?.results} carrouselTitle={"Trending"}/>
       </section>
 
-      <section style={{paddingLeft: "60px", paddingRight: "60px",}} className='trending'>
-        <Carrousel APIdata={trendingMovies?.data?.results}/>
-      </section>
-
-      <section style={{paddingLeft: "60px", paddingRight: "60px",}} className='trending'>
-        <Carrousel APIdata={trendingMovies?.data?.results}/>
-      </section>
-
-      <section style={{paddingLeft: "60px", paddingRight: "60px",}} className='trending'>
-        <Carrousel APIdata={trendingMovies?.data?.results}/>
-      </section>
-    
-     
     </main>
   )
 }
