@@ -24,9 +24,9 @@ const Navbar = () => {
                 <li>Movies</li>
             </Link>
 
-            {/* <Link href={"/new&popular"}> */}
+            <Link href={"/new&popular"}> 
                 <li>New & Popular</li>
-           {/*  </Link> */}
+            </Link> 
 
             {/* <Link href={"/myList"}> */}
                 <li>My List</li>

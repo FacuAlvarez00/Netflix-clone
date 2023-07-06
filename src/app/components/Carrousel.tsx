@@ -1,4 +1,5 @@
 import React from 'react'
+import { UserAuth } from '../context/AppContext';
 
 type props = {
   APIdata: any;
@@ -7,6 +8,10 @@ type props = {
 
 
 const Carrousel: React.FC<props> = ({ APIdata, carrouselTitle }) => {
+
+  const { topTenMovies } = UserAuth()
+
+  console.log(topTenMovies)
 
   const sortedData = APIdata?.sort(() => Math.random() - 0.5);
 
