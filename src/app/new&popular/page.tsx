@@ -23,11 +23,11 @@ const movies = () => {
     const {topTenMovies, headerMovie, trendingMovies} = UserAuth()
 
 
-    console.log(trendingMovies)
+
 
    
     return (
-        <main>
+        <div>
             <Navbar/>
 
             <Hero APIdata={headerMovie?.data?.results}/>
@@ -37,7 +37,7 @@ const movies = () => {
                 <Carrousel carrouselTitle={"Worth the Wait"} APIdata={trendingMovies?.data?.results}/>
                 <Toptencarrousel carrouselTitle={"Top 10 TV Shows in Argentina Today"} APIdata={topTenMovies?.data?.results}/>
                 <Carrousel carrouselTitle={"Coming This Week"} APIdata={trendingMovies?.data?.results}/>
-        </main>
+        </div>
     )
 }
 

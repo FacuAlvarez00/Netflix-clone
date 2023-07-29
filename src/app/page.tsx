@@ -3,7 +3,7 @@ import Carrousel from './components/Carrousel'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Toptencarrousel from './components/Toptencarrousel'
-import { AuthContextProvider, UserAuth } from './context/AppContext'
+import { UserAuth } from './context/AppContext'
 
 export default function Home() {
 
