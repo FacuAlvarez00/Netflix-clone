@@ -9,6 +9,7 @@ import { requests } from "../utils/requests"
 import axios from 'axios'
 import Carrousel from '@/app/components/Carrousel'
 import Toptencarrousel from '@/app/components/Toptencarrousel'
+import GenreNav from '../components/GenreNav';
 
 
 
@@ -35,6 +36,7 @@ const tvshows = () => {
     return (
         <main>
             <Navbar/>
+            <GenreNav genre={"TV Shows"}/>
 
             <Hero APIdata={headerMovie?.data?.results}/>
             

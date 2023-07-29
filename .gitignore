@@ -34,6 +34,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+La navbar tiene un degrade del color original pero mas oscuro, cuando arranca la navbar de genero termina
+hacer que la navbar + genrenav sea sticky
+
 
 https://www.youtube.com/watch?v=ATz8wg6sg30
 https://www.themoviedb.org/u/levizera
