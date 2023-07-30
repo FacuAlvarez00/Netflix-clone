@@ -36,7 +36,7 @@ const tvshows = () => {
     return (
         <main>
             <Navbar/>
-            <GenreNav genre={"TV Shows"}/>
+            <GenreNav genre={"Movies"}/>
 
             <Hero APIdata={headerMovie?.data?.results}/>
             

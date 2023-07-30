@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Carrousel from '../components/Carrousel'
 import Toptencarrousel from '../components/Toptencarrousel'
+import GenreNav from '../components/GenreNav'
 
 const page = () => {
 
@@ -14,6 +15,7 @@ const page = () => {
   return (
     <div>
         <Navbar/>
+        <GenreNav genre={"TV Shows"}/>
 
         <Hero APIdata={headerMovie?.data?.results}/>
         <Carrousel carrouselTitle={"Popular on Netflix"} APIdata={trendingMovies?.data?.results}/>

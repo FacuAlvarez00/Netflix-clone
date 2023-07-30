@@ -10,6 +10,7 @@ import axios from 'axios'
 import Carrousel from '@/app/components/Carrousel'
 import Toptencarrousel from '@/app/components/Toptencarrousel'
 import {UserAuth} from "../context/AppContext"
+import GenreNav from '../components/GenreNav';
 
 
 
@@ -29,7 +30,6 @@ const movies = () => {
     return (
         <div>
             <Navbar/>
-
             <Hero APIdata={headerMovie?.data?.results}/>
                 <Carrousel carrouselTitle={"New on Netflix"} APIdata={trendingMovies?.data?.results}/>
                 <Toptencarrousel carrouselTitle={"Top 10 Movies in Argentina Today"} APIdata={topTenMovies?.data?.results}/>
