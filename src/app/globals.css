@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 
 body {
   background-color: #141414;
@@ -21,6 +27,7 @@ body {
   align-items: center;
   width: 100%;
   list-style: none;
+  padding: 0 60px;
 }
 .navbar a{
   text-decoration: none;
@@ -31,4 +38,16 @@ body {
     text-decoration: none;
     color: white;
     margin-right: 20px;
+}
+.navbar_misc{
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: flex-end;
+}
+.navbar_misc > *{
+ margin-right: 15px;
+}
+.navbar_misc > *:last-child {
+  margin-right: 0;
 }

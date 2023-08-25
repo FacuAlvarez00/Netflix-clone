@@ -3,6 +3,7 @@ import {MdArrowDropDown} from "react-icons/md"
 import {FiGrid} from "react-icons/fi"
 import {IoMdList} from "react-icons/io"
 
+
 type props = {
     genre: string;
 
