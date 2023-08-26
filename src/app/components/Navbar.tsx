@@ -33,11 +33,11 @@ const Navbar = () => {
                     <Link href={"/new&popular"}>
                         <li>New & Popular</li>
                     </Link>
-
+{/* 
                     <Link href={"/myList"}>
                         <li>My List</li>
                     </Link>
-
+ */}
 
                 </ul>
 

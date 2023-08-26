@@ -18,7 +18,7 @@ const Carrousel: React.FC<props> = ({ APIdata, carrouselTitle }) => {
   return (
     <>
       <h1 style={{ color: "white", }} className="">{carrouselTitle}</h1>
-      <div style={{ display: "flex", }} className='flex'>
+      <div style={{ display: "flex", overflow: "hidden", }} className='flex'>
 
         {sortedData?.map((item: any) =>
           <div style={{ display: "flex", flexDirection: "column", gap: "20px", marginRight: "8px", }} key={item?.title}>
